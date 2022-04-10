@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cecilia_Portfolio</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+    <link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+
+<!--    <link rel="stylesheet" href="css/jquery.fullpage.css">-->
+    <!-- <link rel="stylesheet" href="css/examples.css"> -->
+<!--    <link rel="stylesheet" href="css/main.css">-->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="js/jquery.fullpage.min.js"></script>
+<!--    <script src="js/jquery.bxslider.min.js"></script>-->
+    <script src="js/main.js"></script>
+
+
+
+  </head>
+
+
+
+
+
+
+
+<style>
+<!--full page-->
+
+
+<!--full page-->
+      * {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+body {
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+  font-weight: 600;
+  font-weight: normal;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  /* color: #fff; */
+ border-bottom: 1px solid #eee;
+  z-index: 9999;
+  background-color: #0e4035;
+}
+.header-center {
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+  font-weight:bold;
+  font-size: 24px;
+  margin-top:25px;
+}
+.logo a {
+  color: #ffff;
+}
+
+.main-menu li {
+  float: left;
+  font-size: 15px;
+  margin-left: 20px;
+}
+.main-menu li a {
+  color: #ffff;
+  opacity: 0.6;
+}
+.main-menu li.active a {
+  opacity: 1;
+}
+img{
+  display: block;
+
+}
+/* 휠 동그라미 버튼 */
+
+#fp-nav {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 17px;
+  z-index: 9999;
+  margin-top: 0 !important;
+  /* background-color: aqua; */
+}
+#fp-nav ul li {
+  /* margin: 0; */
+  display: flex;
+  justify-content: center;
+}
+#fp-nav ul li a {
+  display: block;
+  padding: 3px;
+}
+#fp-nav ul li a span {
+  display: block;
+  width: 6px; height: 6px;
+  border-radius: 100%;
+  background-color: #000;
+  opacity: 0.5;
+}
+#fp-nav ul li a.active span {
+ width: 8px; height: 8px;
+ opacity: 1;
+}
+/* 네비게이션 end */
+
+.text1 p {
+  margin-top: 40px;
+  display: block;
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+  text-align: center;
+  margin-bottom: 100px;
+
+}
+#logo2 a img{
+
+  margin-top: 100px;
+  margin-left:500px;
+}
+.main-image1 img{
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.design-goal img{
+
+  margin-top: 500px;
+  margin: 0 auto;
+}
+/* -------------------------HOME/DESIGNGOAL END--------- */
+
+/* bx-slider */
+/* bx슬라이더 */
+
+.slide-list >li {
+  width: 100%;
+  height: 100vh;
+  /* color:aqua; */
+  /* background-color: beige; */
+  position: relative;
+}
+
+.content{
+/*width: 1024px;*/
+/*height:900px;*/
+/* background-color: aqua; */
+position: absolute;
+ left:-40px;
+top:0%;
+/*transform: translate(-50%, -50%); */
+
+}
+.content a {
+  display: block;
+  width: 1024x;
+  height: 0px;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  color:#000;
+}
+.content a img{
+  display: block;
+
+}
+
+/* bx좌우버튼 */
+.bx-prev, .bx-next{
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+width: 50px;
+height: 50px;
+background-color: red;
+
+/* next , prev 글자 안보이게 */
+overflow: hidden;
+
+}
+.bx-prev{
+  margin-left: -600px;
+}
+.bx-next{
+  margin-left: 600px;
+}
+
+.bx-prev::before, .bx-next::befroe{
+  font-family: xeicon!important;
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size:30px;
+  color:#fff;
+}
+.bx-prev::before{
+  content: "\e93b";
+  text-align: left;
+}
+.bx-next::before{
+content: \e93e;
+text-align: right;
+}
+/* bx동그라미버튼 */
+.bx-pager{
+  position: absolute;
+  bottom:15px;
+  left:50%;
+  transform: translateX(-50%);
+
+}
+.bx-pager div{
+  display: inline-block;
+  padding: 3px;
+}
+
+.bx-pager div a{
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #fff;
+  opacity: 0.5;
+  /* 글씨컬러 투명하게  */
+  color:transparent;
+}
+.bx-pager div a.active{
+  opacity: 1;
+  width: 24px;
+  height: 6px;
+}
+/* -----------bx-slider end-------------- */
+
+.who-what-how ul {
+
+
+margin-left:500px;
+
+}
+
+
+.what{
+  margin-left:300px;
+  margin-top:-100px;
+
+
+}
+
+.how{
+  margin-top:-550px;
+  margin-left:600px;
+
+}
+
+
+
+/*!
+ * fullPage 2.9.7
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+html.fp-enabled,
+.fp-enabled body {
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+
+    /*Avoid flicker on slides transitions for mobile phones #336 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.fp-section {
+    position: relative;
+    -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
+    -moz-box-sizing: border-box; /* <=28 */
+    box-sizing: border-box;
+}
+.fp-slide {
+    float: left;
+}
+.fp-slide, .fp-slidesContainer {
+    height: 100%;
+    display: block;
+}
+.fp-slides {
+    z-index:1;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out; /* Safari<=6 Android<=4.3 */
+    transition: all 0.3s ease-out;
+}
+.fp-section.fp-table, .fp-slide.fp-table {
+    display: table;
+    table-layout:fixed;
+    width: 100%;
+}
+.fp-tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+.fp-slidesContainer {
+    float: left;
+    position: relative;
+}
+.fp-controlArrow {
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: -38px;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.fp-controlArrow.fp-prev {
+    left: 15px;
+    width: 0;
+    border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent #fff transparent transparent;
+}
+.fp-controlArrow.fp-next {
+    right: 15px;
+    border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent #fff;
+}
+.fp-scrollable {
+    overflow: hidden;
+    position: relative;
+}
+.fp-scroller{
+    overflow: hidden;
+}
+.iScrollIndicator{
+    border: 0 !important;
+}
+.fp-notransition {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+/*#fp-nav {
+    position: fixed;
+    z-index: 100;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+}
+#fp-nav.right {
+    right: 17px;
+}
+#fp-nav.left {
+    left: 17px;
+}
+.fp-slidesNav{
+    position: absolute;
+    z-index: 4;
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    left: 0 !important;
+    right: 0;
+    margin: 0 auto !important;
+}
+.fp-slidesNav.bottom {
+    bottom: 17px;
+}
+.fp-slidesNav.top {
+    top: 17px;
+}
+#fp-nav ul,
+.fp-slidesNav ul {
+  margin: 0;
+  padding: 0;
+}
+#fp-nav ul li,
+.fp-slidesNav ul li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position:relative;
+}
+.fp-slidesNav ul li {
+    display: inline-block;
+}
+#fp-nav ul li a,
+.fp-slidesNav ul li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span{
+    height: 12px;
+    width: 12px;
+    margin: -6px 0 0 -6px;
+    border-radius: 100%;
+ }
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 4px;
+    width: 4px;
+    border: 0;
+    background: #333;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span{
+    width: 10px;
+    height: 10px;
+    margin: -5px 0px 0px -5px;
+}
+#fp-nav ul li .fp-tooltip {
+    position: absolute;
+    top: -2px;
+    color: #fff;
+    font-size: 14px;
+    font-family: arial, helvetica, sans-serif;
+    white-space: nowrap;
+    max-width: 220px;
+    overflow: hidden;
+    display: block;
+    opacity: 0;
+    width: 0;
+    cursor: pointer;
+}
+#fp-nav ul li:hover .fp-tooltip,
+#fp-nav.fp-show-active a.active + .fp-tooltip {
+    -webkit-transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
+    width: auto;
+    opacity: 1;
+}
+#fp-nav ul li .fp-tooltip.right {
+    right: 20px;
+}
+#fp-nav ul li .fp-tooltip.left {
+    left: 20px;
+
+.fp-auto-height.fp-section,
+.fp-auto-height .fp-slide,
+.fp-auto-height .fp-tableCell{
+    height: auto !important;
+}
+
+.fp-responsive .fp-auto-height-responsive.fp-section,
+.fp-responsive .fp-auto-height-responsive .fp-slide,
+.fp-responsive .fp-auto-height-responsive .fp-tableCell {
+    height: auto !important;
+}
+
+
+
+
+
+
+
+</style>
+<script>
+
+  /*!
+ * fullPage 2.9.7
+ * https://github.com/alvarotrigo/fullPage.js
+ * @license MIT licensed
+ *
+ * Copyright (C) 2015 alvarotrigo.com - A project by Alvaro Trigo
+ */
+l
+
+
+//# sourceMappingURL=jquery.fullpage.min.js.map
+
+
+  $(function () {
+
+    //풀페이지 실행
+    $('#fullpage').fullpage({
+      sectionsColor: ['#f7f8f7', '#ffff', '#ffff', '#ffff', '#ffff'],
+      anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+      menu: '#menu',
+      scrollingSpeed: 1000,
+      navigation: true,
+      navigationPosition: 'right',
+      // navigationTooltips: ['First page', 'Second page', 'Third page', 'Last page']
+    });
+
+
+    //bx slider
+    $('.slide-list').bxSlider({
+      //a태그 링크 오류 해결
+      touchEnabled: (navigator.maxTouchPoints > 0),
+    });
+
+
+
+
+
+});//로딩함수
+
+
+      var gulp = require('gulp');
+var rename = require('gulp-rename');
+var sourcemaps = require('gulp-sourcemaps');
+var uglify = require('gulp-uglify');
+var minifyCss = require('gulp-clean-css');
+​
+gulp.task('sass', function() {
+    gulp.src('./jquery.fullpage.scss')
+        .pipe(sass({
+            outputStyle: 'expanded'
+        }))
+        .pipe(gulp.dest('.'));
+});
+​
+gulp.task('css', function() {
+    gulp.src('./jquery.fullpage.css')
+        .pipe(sourcemaps.init())
+        .pipe(gulp.dest('./dist'))
+        .pipe(minifyCss({
+            compatibility: 'ie8',
+            advanced: false,
+            keepSpecialComments: '1'
+        }))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('./dist'));
+});
+​
+gulp.task('js', function() {
+    gulp.src('./jquery.fullpage.js')
+        .pipe(sourcemaps.init())
+        .pipe(gulp.dest('./dist'))
+        .pipe(uglify({
+            output: {
+                comments: 'some'
+            }
+        }))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('./dist'));
+});
+​
+gulp.task('scrolloverflow', function() {
+    gulp.src('./vendors/scrolloverflow.js')
+        .pipe(sourcemaps.init())
+        .pipe(gulp.dest('./vendors'))
+        .pipe(uglify({
+            output: {
+                comments: 'some'
+            }
+        }))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('./vendors'));
+});
+​
+//private file
+gulp.task('extensions', function() {
+    gulp.src('./jquery.fullpage.extensions.js')
+        .pipe(uglify({
+            output: {
+                comments: 'some'
+            }
+        }))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('./dist'));
+});
+​
+gulp.task('default', ['css', 'js']);
+
+
+
+
+</script>
+
+
+
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="header-center">
+        <h1 class="logo"><a href="http://chunghyoyi.shop">MY PORTFOLIO</a></h1>
+        <ul id="menu" class="main-menu">
+          <li data-menuanchor="firstPage"> <a href="#firstPage"></a><a href="http://chunghyoyi.shop">HOME</a></li>
+          <li data-menuanchor="secondPage"><a href="#secondPage">DEISGN GOAL</a></li>
+          <li data-menuanchor="3rdPage"><a href="#3rdPage">APP DESIGN</a></li>
+          <li data-menuanchor="4thpage"><a href="#4thpage">WEB DESIGN</a></li>
+          <li data-menuanchor="lastPage"><a href="#lastPage">WEB PUBLISHING</a></li>
+        </ul>
+      </div>
+    </header>
+
+
+
+
+    <div id="fullpage">
+
+
+      <div class="section " id="section0">
+        <ul class="slide-list">
+          <li>
+            <div class="content"><img
+                  src="static/main-slide1.jpg" alt="">
+                <i class="xi-angle-left">
+                  <i class="xi-angle-right"></i>
+              </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="section" id="section1">
+        <div class="main1">
+          <h1 id="logo2"><a href="#"><img src="static/logo_basic2 1.png" alt="이니스프리로고입니다"></a></h1>
+          <!-- logo-end -->
+          <div class="main-image1">
+            <img src="static/main-images.png" alt="메인이미지입니다">
+          </div>
+
+          <div class="design-goal">
+            <img src="static/DESIGNGOAL-main.png" alt="디자인골">
+          </div>
+
+          <div class="text1">
+            <p><strong>It emphasizes that it is a good natural ingredient by adding more green colors than the existing website.<br>
+              I did. Innisfree is a cosmetic product used by the main customers from their teens.<br>
+              It emphasizes natural-like ingredients made from good ingredients and natural extracts, and it is difficult to make ingredients.<br>
+              I appeal to the entire customer base.</strong>
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="section" id="section2">
+        <div class="who-what-how" id="flip">
+          <ul>
+            <li class="who">
+              <p class="front1"><img src="static/nature-mask1.png" alt="">
+              </p>
+
+            </li>
+
+            <li class="what">
+              <p class="front2">
+                <img src="static/nature-mask2.png" alt="what배경">
+              </p>
+
+            </li>
+
+            <li class="how">
+              <p class="front3">
+                <img src="static/nature-mask3.png" alt="how배경">
+              </p>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section" id="section3">
+
+      </div>
+      <div class="section" id="section4">
+
+      </div>
+    </div>
+
+  </body>
+
+</html>
